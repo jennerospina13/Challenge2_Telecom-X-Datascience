@@ -6,12 +6,10 @@ El Objetivo de este proyecto es realizar el análisis de datos a Telecom X, pues
 
 ## 🎯 Propósito del Análisis
 
-Realizar el analisis en detalle respondiendo al ¿Por que se presenta  an alta laasa de cancelaciones del cliente:
-- Identificar Variables que estan afectando esta situación.
-- # Identificar productos mas y menos vendidos por categoria.
-- # Calificaciones realizadas por los clientes en escala de 1 a 5.
-- # Productos mas y menos vendidos por tienda.
-- # Costo promedio de envio por cada una de las tiendas. 
+Realizar el analisis en detalle respondiendo al ¿Por que se presenta  an alta tasa de cancelaciones de clientes:
+- Identificar Variables que estan incidiendo en esta situación.
+- Identificar los diferentes segmentos de clientes.
+- Identificar total de clientes activos y total de clientes retirados.
 
 ## 📁 Estructura del Proyecto
 
@@ -19,19 +17,21 @@ Archivo del proyecto ipynb, ejecutable en Google Colab y también en Jupyter Not
 
 ## 📊 Ejemplos de Gráficos e Insights
 
-- **Ingresos Totales:** Gráfico de torta que muestra el porcentaje de facturacion de cada una de las tiendas.
-- **Ventas por Categoría:** El analisis arroja que se vende la misma categoria en cada una de las tiendas.
-- **Calificaciones Promedio:** Gráfico de barras en donde la mejor calificacion es para la tienda 3 ganando por centésimas.
-- **Top productos vendidos:** Una reseña de los productos mas vendidos y asi mismo los menos vendidos por tienda.
-- **Costo de Envío Promedio:** Gráficos de barras para comparar entre tiendas.
+- **Grafico Churn VS No Churn por Antiguedad** Gráfico de Barras que muestra un comparativo entre clientes retirados(CHURN) y clientes activos (NO CHURN) segun el tiempo de permanencia.
+- **Grafico tasa de churn por Antiguedad** Grafico de barras que muestra en porcentaje los clientes retirados segun su tiempo de permanencia.
+- **Grafico Churn VS No Churn por tipo de internet** Gráfico de Barras que muestra un comparativo entre clientes retirados(CHURN) y clientes activos (NO CHURN) segun el tipo de internet (DSL, Fibra Optica y Sin Internet).
+- **Grafico tasa de churn por Tipo de Internet** Grafico de barras que muestra en porcentaje los clientes retirados segun el tipo de internet (DSL, Fibra Optica y Sin Internet).
+- **Grafico Churn VS No Churn por Soporte Técnico** Gráfico de Barras que muestra un comparativo entre clientes retirados(CHURN) y clientes activos (NO CHURN) segun si poseen o no el servicio de soporte tecnico.
+- **Grafico tasa de churn por Soporte Técnico** Grafico de barras que muestra en porcentaje los clientes retirados segun si poseen o no el servicio de soporte tecnico.
+- **Grafico Churn VS No Churn por Metodo de pago** Gráfico de Barras que muestra un comparativo entre clientes retirados(CHURN) y clientes activos (NO CHURN) segun el metodo de pago (transferencia bancaria, tarjeta de credito, cheque electronico y cheque enviado por Mail).
+- **Grafico tasa de churn por  Metodo de pago** Grafico de barras que muestra en porcentaje los clientes retirados segun el metodo de pago (transferencia bancaria, tarjeta de credito, cheque electronico y cheque enviado por Mail).
 
-> ✅ Insight clave: La Tienda 4 en su facturacion es la mas baja, asi mismo no es la peor calificada pero por ser la tercera con un promedio de 3.98, ayuda en la toma de decision y por ello se determina que esta debe ser vendida.
+> ✅ Insight clave: Se encuantra una alta incidencia de retiro en clientes en clientes que llevan menos de 1 año y clientes hasta 2 años de antiguedad, asi mismo en clientes con red en Fibra optica, clientes que no cuenta con soporte tecnico y por ultimo clientes con medio de pago cheque electronico.
 
 ## 🚀 Cómo Ejecutar el Notebook
 
-1. Abre el archivo `AluraStoreLatam.ipynb` en Google Colab.
-2. Asegúrate de tener acceso a los enlaces de los CSV (`url`, `url2`, etc.).
-3. Ejecuta las celdas en orden para:
+1. Abre el archivo `TelecomX_LATAM.ipyn` en Google Colab.
+2. Ejecuta las celdas en orden para:
    - Cargar los datos.
    - Procesarlos y agruparlos.
    - Generar los gráficos.
@@ -39,10 +39,19 @@ Archivo del proyecto ipynb, ejecutable en Google Colab y también en Jupyter Not
 
 ## 📌 Conclusión
 
-Para concluir, según analisis realizados se encuentra que la "tienda 4" no representa buena fuente de ingresos al ser la tienda con la facturacion mas baja,
-y su promedio de calificación es el tercero mas bajo, es por esto que se recomienda la venta de esta tienda.
+Para concluir, según analisis realizados se encuentra que se debe tener en cuenta las siguientes recomendaciones:
 
-Es importante como el uso de Python, Pandas y Matplotlib, brinda y apoya con argumentos sólidos la solución al problema planteado e influye en la toma de decisiones.
+- Planes de fidelización y contratos a largo plazo, además ofrecer descuentos o beneficios adicionales para clientes que elijan planes de 1 o 2 años.
+
+- Mejoras en la red de Fibra Óptica, Abordar y planear mantenimientos preventivos-correctivos sobre la red de Fibra óptica ya que las fallas sobre estas pueden ser el origen de la alta tasa de cancelación.
+
+- Programa de retención para clientes nuevos, Implementar estrategias específicas para clientes en sus primeros 6 meses.
+
+- Incluir paquetes con servicio de soporte técnico, es notable que con la ayuda de un profesional se reduzca la cancelación de los servicios.
+
+- Optimización en procesos de facturación electrónica, el alto porcentaje de churn en este método de facturación, sugiere malas experiencias de usuario.
+
+- Es importante como el uso de Python, Pandas y Matplotlib, brinda y apoya con argumentos sólidos la solución al problema planteado e influye en la toma de decisiones.
 
 ---
 
